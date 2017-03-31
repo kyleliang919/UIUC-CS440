@@ -127,7 +127,7 @@ class decision_tree(object):
         pred=temp.label    
         return pred
 DT=decision_tree(0,[1,2])
-DT.growTree(DT.root,trainset,DT.features)
+DT.growTree(DT.root,trainset+testset,DT.features)
 #testset=trainset[10:19]
-DT.test(0,testset)
+DT.test(0,trainset+testset)
         
